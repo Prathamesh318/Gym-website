@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(bg3.jpg);
+            height: 100vh;
+            width: 100vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+            background-repeat: no-repeat;
+            text-align: center;
+            background-size: 100vw 100vh;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 3vw;
+            top: 3vh;
+            line-height: 0vw;
+            color: white;
+            /* border: 2px solid red; */
+            font-size: 1.2vw;
+            background-color: black;
+        }
+
+        .left img {
+            /* height: 20vh; */
+            width: 10vw;
+            filter: opacity(70%);
+            filter: invert(100%);
+        }
+
+        .mid {
+            display: block;
+            position: absolute;
+            right: 28vw;
+            top: 3vh;
+            /* border: 2px solid green; */
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .right {
+            position: absolute;
+            right: 3vw;
+            top: 5vh;
+            width: 20vw;
+            display: inline-block;
+            color: white;
+            /* border: 2px solid yellow; */
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 0vw 2vw;
+            font-size: 1.5vw;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: goldenrod;
+            /* font-family: Georgia, 'Times New Roman', Times, serif; */
+            /* font-size: 1.4vw; */
+        }
+
+        .btn {
+            margin: 0vw 2.5vh;
+            /* height: 4vh; */
+            /* width:5vw; */
+            font-size: 1vw;
+            background-color: black;
+            border: 2px solid gray;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            text-decoration: underline;
+            /* color: goldenrod; */
+            background-color: rgb(241, 205, 0);
+        }
+
+        .container {
+
+            color: white;
+            margin-top: 3vh;
+            /* font-size: 2vh; */
+            font-size: 0.8vw;
+
+            margin-left: 3vw;
+            padding: 10vh;
+            position: absolute;
+            top: 25vh;
+            width: 33%;
+            left: 0vw;
+            border: 2px solid gray;
+            border-radius: 20px;
+            text-align: left;
+        }
+
+        .formgroup input {
+            text-align: center;
+            display: block;
+            width: 22vw;
+            /* border: 2px solid black; */
+            padding: 6px;
+            font-size: 1vw;
+            margin: 3px auto;
+            /* border-radius: 8px; */
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width:24vw;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        .formgroup input:hover{
+            color: black;
+            cursor:auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for log -->
+        <div class="left">
+            <img src="logo2.jpg" alt="logo">
+            <p>PV FITNESS CLUB</p>
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="" class=>About us</a></li>
+                <li><a href="">Fitness Checker</a></li>
+                <li><a href="">Contact us</a> </li>
+            </ul>
+        </div>
+        <!-- right boc for buttons -->
+        <div class="right">
+            <button class="btn">Whatsapp</button><button class="btn">Email</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Take membership of our gym now !!!</h1>
+        <form action="prathamesh.html">
+            <div class="formgroup"><input type="text" class="text" placeholder="ENTER YOUR NAME"></div>
+            <div class="formgroup"><input type="text" class="text" placeholder="ENTER YOUR AGE"></div>
+            <div class="formgroup"><input type="text" class="text" placeholder="ENTER YOUR EMAIL"></div>
+            <div class="formgroup"><input type="text" class="text" placeholder="ENTER YOUR NUMBER"></div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
